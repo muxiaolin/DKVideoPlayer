@@ -25,4 +25,10 @@
         android:layout_height="wrap_content"
         android:onClick="onButtonClick"
         android:text="@string/str_multi_player" />
+    <Button
+        android:id="@+id/btn_audio_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="@string/str_audio_player" />
 </LinearLayout>

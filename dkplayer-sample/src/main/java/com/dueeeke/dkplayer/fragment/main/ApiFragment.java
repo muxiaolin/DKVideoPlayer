@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import com.dueeeke.dkplayer.R;
+import com.dueeeke.dkplayer.activity.api.AudioPlayActivity;
 import com.dueeeke.dkplayer.activity.api.ParallelPlayActivity;
 import com.dueeeke.dkplayer.activity.api.PlayRawAssetsActivity;
 import com.dueeeke.dkplayer.activity.api.PlayerActivity;
@@ -47,6 +48,7 @@ public class ApiFragment extends BaseFragment implements View.OnClickListener {
         findViewById(R.id.btn_live).setOnClickListener(this);
         findViewById(R.id.btn_raw_assets).setOnClickListener(this);
         findViewById(R.id.btn_parallel_play).setOnClickListener(this);
+        findViewById(R.id.btn_audio_play).setOnClickListener(this);
     }
 
     @Override
@@ -63,6 +65,9 @@ public class ApiFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.btn_parallel_play:
                 startActivity(new Intent(getActivity(), ParallelPlayActivity.class));
+                break;
+            case R.id.btn_audio_play:
+                startActivity(new Intent(getActivity(), AudioPlayActivity.class));
                 break;
         }
     }

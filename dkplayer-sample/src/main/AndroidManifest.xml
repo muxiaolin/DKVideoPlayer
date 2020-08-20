@@ -91,6 +91,10 @@
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".activity.api.AudioPlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activity.extend.CacheActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout"
             android:screenOrientation="portrait" />
